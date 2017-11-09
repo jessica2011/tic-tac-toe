@@ -34,11 +34,15 @@ function winnerPlayer(value) {
         (array[6] == value && array[7] == value && array[8] == value) ||
         (array[2] == value && array[5] == value && array[8] == value)) {
 
+            board.removeEventListener('click', addXO);
+
         result.textContent = 'Ganó el jugador ' + value + '  yupi!';
 
     } else if (array[0] != null && array[1] != null && array[2] != null &&
         array[3] != null && array[4] != null && array[5] != null &&
         array[6] != null && array[7] != null && array[8] != null) {
+
+        board.removeEventListener('click', addXO);
 
         result.textContent = 'Empate!';
     };
@@ -48,3 +52,5 @@ function winnerPlayer(value) {
 function reset() {
     window.location.reload();
 };
+
+
