@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(245, 222, 179);
+    font-family: 'Coming Soon', cursive;
+}
+
+.board {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: rgb(245, 165, 17);
+    margin: 50px;
+}
+
+p {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(32, 150, 189);
+    margin: 20px;
+}
+
+.board td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.board .row :nth-child(1),
+.board .row :nth-child(2) {
+    border-right: 5px solid blueviolet;
+}
+
+.one,
+.two {
+    border-bottom: 5px solid blueviolet;
+}
+
+.board td:hover {
+    background-color: #9de7e9;
+}
+
+.button {
+    display: block;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgb(243, 209, 19);
+    color: rgb(94, 79, 133);
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: rgb(94, 79, 133);
+    color: rgb(243, 209, 19);
+}
